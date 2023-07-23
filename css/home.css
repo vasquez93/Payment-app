@@ -1,5 +1,9 @@
 *{
     font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 div.secction1{
@@ -64,4 +68,8 @@ span.notification{
 div.carrusel img{
     position: relative;
     width: 80%;
+}
+
+button.arrow{
+    color: black;
 }
