@@ -1,0 +1,250 @@
+* {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+html {
+    width: 98vw;
+    background-color: #F9FAFB;
+    ;
+}
+
+div.secction1 {
+    padding: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    height: 3rem;
+    position: fixed;
+    width: 100vw;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row p {
+    position: absolute;
+    margin-left: 2rem;
+
+}
+
+div.costumer_secction2 {
+
+    width: 100%;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+div.icons {
+    position: absolute;
+    right: 10px;
+    width: 5rem;
+    padding: 0px;
+}
+
+div.costumer_secction2 h2 {
+    width: 80%;
+    font-size: 3rem;
+    margin: 0;
+}
+
+div.secction2 {
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+.secction2 label {
+    font-size: medium;
+    color: #A6AAB4;
+}
+
+div.secction2_div {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.perfil {
+    position: absolute;
+    display: flex;
+    right: 20px;
+    top: 70px;
+}
+
+button.btn {
+    position: relative;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    border: 5px solid #ECECFB;
+    background-image: url(../img/perfil.jpg);
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+div.perfil span.notification {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border: 4px solid #FFFFFF;
+    background-color: #54D3AD;
+    border-radius: 100%;
+}
+
+/*
+menu tabs 
+
+//no se pudo sobre escribir la clase tab de materialize, toco usas el important como ultima opcion porque no cambio de ninguna manera */
+ul.tabs>li.tab>a.tab_menu {
+    color: #A6AAB4 !important;
+}
+
+ul.tabs li.tab a.tab_menu:hover,
+ul.tabs li.tab a.active {
+    color: #3B414B !important;
+}
+
+
+
+div.secction3 ul.tabs li.indicator {
+    display: flex;
+    width: 50%;
+    height: 2px;
+    background-color: #FF7D00;
+}
+
+div.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 95vw;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+div.inputs label {
+    width: 100%;
+    font-size: x-large;
+    text-align: start;
+}
+
+/*
+credit cards 
+*/
+
+div.cards {
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    overflow: hidden;
+}
+
+div.cards>div.addCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    border: 2px #D6D9E4 dashed;
+    border-radius: 10%;
+    color: #A6AAB4;
+}
+
+/*
+
+secction users*/
+div.cardUsers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+button.cardUser {
+    width: 50vw;
+    padding: 10px;
+}
+
+button.cardUser>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+}
+
+/*footer*/
+
+div.secction4 {
+    position: fixed;
+    bottom: -1.4rem;
+    width: 95%;
+
+}
+
+ul.tab_footer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 4rem;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 2rem;
+    overflow: visible;
+    color: #A6AAB4;
+}
+
+ul.tab_footer>li.col {
+    margin: 0 !important;
+}
+
+ul.tab_footer>li>a {
+    width: 3rem;
+    height: 100%;
+}
+
+ul.tab_footer>li>a>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A6AAB4;
+    border-radius: 100%;
+
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+
+}
+
+ul.tab_footer>li>a>i.send {
+    position: relative;
+    background-color: #613EEA;
+    color: #FFFFFF;
+    border-radius: 100%;
+    top: -30px;
+
+}
+
+ul.tab_footer>li>a>i:hover {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    color: #603eeab9;
+    transform: translateY(-10px);
+}

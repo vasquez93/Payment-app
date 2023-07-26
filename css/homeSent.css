@@ -7,6 +7,7 @@
 
 }
 html{
+    width: 98vw;
     background-color: #F9FAFB;;
 }
 
@@ -116,7 +117,23 @@ estilos materialize carousel
 /*
 menu tabs
 */
+/*no se pudo sobre escribir la clase tab de materialize, toco usas el important como ultima opcion porque no cambio de ninguna manera */
+a.tab_menu{
+    color: #A6AAB4 !important;
+}
 
+ul.tabs li.tab a.tab_menu:hover, ul.tabs li.tab a.active {
+    color: #3B414B !important;
+}
+
+
+
+div.secction3 ul.tabs li.indicator{
+    display: flex;
+    width: 50%;
+    height: 2px;
+    background-color: #FF7D00;
+}
 
 div.inputs{
     width: 95vw;
@@ -130,16 +147,23 @@ label.search{
     border-radius: 10px;
     padding: 10px;
     width: 100%;
-    background-color: #F0F1F4;
-
-    
+    background-color: #F0F1F4; 
 }
+
 #search{
     margin: 0ch;
-    padding: 0;
+    padding: 10px;
     border: none;
     width: 90%;
+    background-color: transparent;
+    font-size: large;
 }
+
+input.browser-default{
+    content: "";
+    border: none;
+}
+
 .day{
     letter-spacing: 1px;
     margin-top: 0.7rem;
@@ -202,36 +226,59 @@ div.value{
     font-weight: 800;
 }
 
+/*footer*/
+
 div.secction4{    
     position: fixed;
-    width: 100%;
+    bottom: -1.4rem;
+    width: 95%;
 
 }
 ul.tab_footer{
+    display: flex;
     position: relative;
     width: 100%;
-    height: 3rem;
+    justify-content: space-evenly;
+    height: 4rem;
     background-color: #FFFFFF;
     margin: 0;
-    padding: 10px 0;
-    border: #171D33 solid 1px;
+    padding-bottom: 2rem;
     overflow: visible;
+    color: #A6AAB4;
 }
 
-button.btnfooter{
-    position: absolute;
+ul.tab_footer > li.col{
+    margin: 0 !important;
+}
+ul.tab_footer > li > a{
+    width: 3rem;
+    height: 100%;
+}
+
+ul.tab_footer > li > a > i{
     display: flex;
-    top: -2rem;
-    left: 43%;
-    z-index: 100;
-    border-radius: 100%;
+    justify-content: center;
     align-items: center;
-    border: none;
-    background-color: #613EEA;
-    
-}
+    color: #A6AAB4;
+    border-radius: 100%;
 
-button.btnfooter i{
+    height: 4rem;
+    width: 4rem;
+    font-size: 3rem;
+
+}
+ul.tab_footer > li > a > i.send{
+    position: relative;
+    background-color: #613EEA;
     color: #FFFFFF;
-    top: 1rem;
+    border-radius:100%;
+    top: -30px;
+
+}
+ul.tab_footer > li > a > i:hover{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    color: #603eeab9;
+    transform: translateY(-10px);
 }

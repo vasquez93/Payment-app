@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         duration: 300,
         dist: -100,
         shift: 5,
-        padding: 0,
+        padding: -200,
         numVisible: 3
 
     });
@@ -24,4 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuTabs = document.querySelectorAll('.tabs');
     M.Tabs.init(menuTabs);
 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttonFooter = document.querySelectorAll('.btn_footer');
+    
 });
