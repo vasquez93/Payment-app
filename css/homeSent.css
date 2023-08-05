@@ -8,7 +8,7 @@
 }
 html{
     width: 98vw;
-    background-color: #F9FAFB;;
+    background-color: #F9FAFB;
 }
 
 div.secction1{
@@ -118,19 +118,27 @@ estilos materialize carousel
 menu tabs
 */
 /*no se pudo sobre escribir la clase tab de materialize, toco usas el important como ultima opcion porque no cambio de ninguna manera */
-a.tab_menu{
+
+li > .tab_menu{ 
+
+    background-color: #ffffffb9;
+    margin: auto;
+    border-radius: 10px !important;
+    width: 30vw !important;
     color: #A6AAB4 !important;
 }
 
 ul.tabs li.tab a.tab_menu:hover, ul.tabs li.tab a.active {
+    font-size: 1.2rem;
     color: #3B414B !important;
+    box-shadow: 2px 2px 2px #000000b7;
 }
 
 
 
 div.secction3 ul.tabs li.indicator{
     display: flex;
-    width: 50%;
+    width: 34%;
     height: 2px;
     background-color: #FF7D00;
 }
@@ -192,13 +200,16 @@ div.image{
     width: 70px;
     height: 70px;
     object-fit: cover;
+    background: transparent;
 }
 
 div.image img{
+
     border-radius: 100%;
 }
 
 div.data{
+    background-color: transparent;
     letter-spacing: 0.2px;
     color: #171D33;
     position: absolute;
@@ -231,7 +242,7 @@ div.value{
 div.secction4{    
     position: fixed;
     bottom: -1.4rem;
-    width: 95%;
+    width: 100%;
 
 }
 ul.tab_footer{
